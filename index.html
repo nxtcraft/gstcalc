@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XXXXXXXXXX");</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GST Calculator India — Free Online GST Calculator 2026</title>
+<meta name="description" content="Free GST calculator India. Add GST, remove GST (reverse), calculate CGST/SGST/IGST split. All GST rates: 5%, 12%, 18%, 28%. Instant, no signup needed.">
+<meta name="keywords" content="gst calculator, gst calculator india, reverse gst calculator, cgst sgst calculator, 18 percent gst calculator, gst amount calculator, gst inclusive calculator, gst exclusive calculator">
+<link rel="canonical" href="https://nxtcraft.github.io/gstcalc/">
+<meta property="og:title" content="GST Calculator India — Free Online GST Calculator">
+<meta property="og:description" content="Calculate GST amount, reverse GST, and CGST/SGST/IGST split. Free, instant, no signup.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nxtcraft.github.io/gstcalc/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GST Calculator India 2026">
+<meta name="twitter:description" content="Free GST calculator — add GST, reverse GST, CGST/SGST/IGST split. All slabs: 5% 12% 18% 28%.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "GSTCalc",
+  "url": "https://nxtcraft.github.io/gstcalc/",
+  "description": "Free GST calculator India — add GST, reverse GST, CGST/SGST/IGST split, GST rate finder.",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How to calculate GST on a price?",
+      "acceptedAnswer": { "@type": "Answer", "text": "GST Amount = (Original Price × GST Rate) ÷ 100. Total Price = Original Price + GST Amount. For example, ₹1,000 at 18% GST: GST = ₹180, Total = ₹1,180." }
+    },
+    {
+      "@type": "Question",
+      "name": "How to remove GST from a GST-inclusive price?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Original Price = (GST-Inclusive Price × 100) ÷ (100 + GST Rate). For example, ₹1,180 inclusive of 18% GST: Original = (1180 × 100) ÷ 118 = ₹1,000." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is CGST and SGST?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For intrastate (within same state) transactions, GST is split equally between CGST (Central GST, goes to central government) and SGST (State GST, goes to state government). For interstate transactions, the full GST is charged as IGST (Integrated GST)." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the GST rates in India?",
+      "acceptedAnswer": { "@type": "Answer", "text": "India has 5 GST slabs: 0% (essential goods), 5% (common items), 12% (processed food, computers), 18% (most services, electronics), and 28% (luxury goods, sin goods like tobacco and cars)." }
+    }
+  ]
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0fdf4;color:#14532d;min-height:100vh;}
+.header{background:linear-gradient(135deg,#15803d,#16a34a);color:#fff;padding:18px 20px 0;text-align:center;}
+.header h1{font-size:22px;font-weight:800;margin-bottom:4px;}
+.header p{font-size:13px;opacity:.85;margin-bottom:16px;}
+.tabs{display:flex;gap:0;overflow-x:auto;justify-content:center;}
+.tab{padding:10px 18px;font-size:13px;font-weight:600;cursor:pointer;border:none;background:rgba(255,255,255,.15);color:#fff;border-radius:8px 8px 0 0;white-space:nowrap;transition:background .15s;}
+.tab:hover{background:rgba(255,255,255,.25);}
+.tab.active{background:#fff;color:#15803d;}
+.container{max-width:680px;margin:0 auto;padding:24px 16px;}
+.panel{display:none;}
+.panel.active{display:block;}
+.card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(21,128,61,.1);margin-bottom:20px;}
+label{display:block;font-size:13px;font-weight:600;color:#15803d;margin-bottom:6px;}
+input[type=number],select{width:100%;padding:12px 14px;border:2px solid #bbf7d0;border-radius:8px;font-size:16px;color:#14532d;background:#fff;outline:none;transition:border .15s;}
+input[type=number]:focus,select:focus{border-color:#16a34a;}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+.row1{margin-bottom:14px;}
+.btn{width:100%;padding:13px;background:#16a34a;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;transition:background .15s;margin-top:4px;}
+.btn:hover{background:#15803d;}
+.result-box{background:#f0fdf4;border:2px solid #bbf7d0;border-radius:10px;padding:20px;margin-top:18px;}
+.result-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #dcfce7;}
+.result-row:last-child{border-bottom:none;font-weight:800;font-size:17px;color:#15803d;}
+.result-label{font-size:14px;color:#4b7c59;}
+.result-val{font-size:15px;font-weight:700;color:#14532d;}
+.badge{display:inline-block;background:#dcfce7;color:#15803d;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;margin-left:6px;}
+.rate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:4px;}
+.rate-chip{background:#f0fdf4;border:2px solid #bbf7d0;border-radius:8px;padding:10px;text-align:center;cursor:pointer;transition:all .15s;}
+.rate-chip:hover,.rate-chip.sel{background:#16a34a;border-color:#16a34a;color:#fff;}
+.rate-chip .pct{font-size:20px;font-weight:800;}
+.rate-chip .lbl{font-size:11px;opacity:.8;margin-top:2px;}
+.split-card{background:#f0fdf4;border-radius:8px;padding:14px;margin-top:10px;}
+.split-title{font-size:12px;font-weight:700;color:#4b7c59;margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px;}
+.split-row{display:flex;justify-content:space-between;padding:5px 0;font-size:14px;border-bottom:1px dashed #bbf7d0;}
+.split-row:last-child{border-bottom:none;}
+.seo{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 2px 12px rgba(21,128,61,.1);}
+.seo h2{font-size:18px;font-weight:800;color:#14532d;margin-bottom:12px;}
+.seo h3{font-size:15px;font-weight:700;color:#15803d;margin:16px 0 8px;}
+.seo p,.seo li{font-size:14px;line-height:1.6;color:#374151;margin-bottom:6px;}
+.seo ul,.seo ol{padding-left:20px;}
+.rate-table{width:100%;border-collapse:collapse;font-size:13px;margin:10px 0;}
+.rate-table th{background:#dcfce7;color:#15803d;padding:9px 12px;text-align:left;border:1px solid #bbf7d0;}
+.rate-table td{padding:8px 12px;border:1px solid #e2e8f0;vertical-align:top;}
+.rate-table tr:nth-child(even) td{background:#f8fffe;}
+details{margin-bottom:8px;border:1px solid #bbf7d0;border-radius:8px;overflow:hidden;}
+details summary{padding:12px 16px;font-size:14px;font-weight:600;cursor:pointer;color:#14532d;background:#f0fdf4;}
+details[open] summary{background:#dcfce7;}
+details p{padding:12px 16px;font-size:14px;color:#374151;line-height:1.6;}
+footer{background:#14532d;color:#a7f3d0;text-align:center;padding:18px;font-size:13px;}
+footer a{color:#6ee7b7;text-decoration:none;}
+footer a:hover{text-decoration:underline;}
+.tools-link{margin-top:18px;text-align:center;font-size:13px;color:#4b7c59;}
+.tools-link a{color:#16a34a;font-weight:600;text-decoration:none;}
+@media(max-width:480px){.row2{grid-template-columns:1fr;}.rate-grid{grid-template-columns:repeat(3,1fr);}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>GST<span style="font-weight:300">Calc</span></h1>
+  <p>Free GST Calculator India — Add GST · Reverse GST · CGST/SGST/IGST Split</p>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('add')">➕ Add GST</button>
+    <button class="tab" onclick="showTab('remove')">➖ Reverse GST</button>
+    <button class="tab" onclick="showTab('split')">⚖️ CGST/SGST</button>
+    <button class="tab" onclick="showTab('rates')">📋 GST Rates</button>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- TAB 1: Add GST -->
+<div id="tab-add" class="panel active">
+  <div class="card">
+    <h2 style="font-size:17px;font-weight:800;margin-bottom:18px;color:#14532d;">Add GST to Price</h2>
+    <div class="row2">
+      <div>
+        <label>Original Price (₹)</label>
+        <input type="number" id="add-price" placeholder="e.g. 1000" oninput="calcAdd()" min="0">
+      </div>
+      <div>
+        <label>GST Rate</label>
+        <select id="add-rate" onchange="calcAdd()">
+          <option value="5">5%</option>
+          <option value="12">12%</option>
+          <option value="18" selected>18%</option>
+          <option value="28">28%</option>
+          <option value="custom">Custom %</option>
+        </select>
+      </div>
+    </div>
+    <div id="add-custom-row" class="row1" style="display:none;">
+      <label>Custom GST Rate (%)</label>
+      <input type="number" id="add-custom" placeholder="Enter %" oninput="calcAdd()" min="0" max="100">
+    </div>
+    <div id="add-result" class="result-box" style="display:none;">
+      <div class="result-row">
+        <span class="result-label">Original Price</span>
+        <span class="result-val" id="r-add-base">—</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">GST Amount <span class="badge" id="r-add-pct"></span></span>
+        <span class="result-val" id="r-add-gst">—</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Total (GST Inclusive)</span>
+        <span class="result-val" id="r-add-total">—</span>
+      </div>
+    </div>
+  </div>
+  <div class="tools-link">Also useful: <a href="https://nxtcraft.github.io/invoicelab/" target="_blank" rel="noopener">InvoiceLab</a> · <a href="https://nxtcraft.github.io/shopbook/" target="_blank" rel="noopener">ShopBook</a> · <a href="https://nxtcraft.github.io/emicalc/" target="_blank" rel="noopener">EMICalc</a></div>
+</div>
+
+<!-- TAB 2: Reverse GST -->
+<div id="tab-remove" class="panel">
+  <div class="card">
+    <h2 style="font-size:17px;font-weight:800;margin-bottom:18px;color:#14532d;">Remove GST from Price</h2>
+    <p style="font-size:13px;color:#4b7c59;margin-bottom:16px;">Enter the GST-inclusive price to find the original price and GST component.</p>
+    <div class="row2">
+      <div>
+        <label>GST-Inclusive Price (₹)</label>
+        <input type="number" id="rem-price" placeholder="e.g. 1180" oninput="calcRemove()" min="0">
+      </div>
+      <div>
+        <label>GST Rate</label>
+        <select id="rem-rate" onchange="calcRemove()">
+          <option value="5">5%</option>
+          <option value="12">12%</option>
+          <option value="18" selected>18%</option>
+          <option value="28">28%</option>
+          <option value="custom">Custom %</option>
+        </select>
+      </div>
+    </div>
+    <div id="rem-custom-row" class="row1" style="display:none;">
+      <label>Custom GST Rate (%)</label>
+      <input type="number" id="rem-custom" placeholder="Enter %" oninput="calcRemove()" min="0" max="100">
+    </div>
+    <div id="rem-result" class="result-box" style="display:none;">
+      <div class="result-row">
+        <span class="result-label">GST-Inclusive Price</span>
+        <span class="result-val" id="r-rem-total">—</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">GST Amount <span class="badge" id="r-rem-pct"></span></span>
+        <span class="result-val" id="r-rem-gst">—</span>
+      </div>
+      <div class="result-row">
+        <span class="result-label">Original Price (ex-GST)</span>
+        <span class="result-val" id="r-rem-base">—</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 3: CGST/SGST Split -->
+<div id="tab-split" class="panel">
+  <div class="card">
+    <h2 style="font-size:17px;font-weight:800;margin-bottom:4px;color:#14532d;">CGST / SGST / IGST Split</h2>
+    <p style="font-size:13px;color:#4b7c59;margin-bottom:18px;">Intrastate = CGST + SGST (equal halves). Interstate = IGST (full amount).</p>
+    <div class="row2">
+      <div>
+        <label>Original Price (₹)</label>
+        <input type="number" id="sp-price" placeholder="e.g. 5000" oninput="calcSplit()" min="0">
+      </div>
+      <div>
+        <label>GST Rate</label>
+        <select id="sp-rate" onchange="calcSplit()">
+          <option value="5">5%</option>
+          <option value="12">12%</option>
+          <option value="18" selected>18%</option>
+          <option value="28">28%</option>
+          <option value="custom">Custom %</option>
+        </select>
+      </div>
+    </div>
+    <div id="sp-custom-row" class="row1" style="display:none;">
+      <label>Custom GST Rate (%)</label>
+      <input type="number" id="sp-custom" placeholder="Enter %" oninput="calcSplit()" min="0" max="100">
+    </div>
+    <div id="sp-result" style="display:none;">
+      <div class="split-card">
+        <div class="split-title">🏠 Intrastate (within same state)</div>
+        <div class="split-row"><span>Original Price</span><span id="s-base">—</span></div>
+        <div class="split-row"><span>CGST <span class="badge" id="s-cgst-pct"></span></span><span id="s-cgst">—</span></div>
+        <div class="split-row"><span>SGST <span class="badge" id="s-sgst-pct"></span></span><span id="s-sgst">—</span></div>
+        <div class="split-row" style="font-weight:700;font-size:15px;color:#14532d;"><span>Total</span><span id="s-intra-total">—</span></div>
+      </div>
+      <div class="split-card" style="margin-top:10px;">
+        <div class="split-title">✈️ Interstate (between states)</div>
+        <div class="split-row"><span>Original Price</span><span id="s-base2">—</span></div>
+        <div class="split-row"><span>IGST <span class="badge" id="s-igst-pct"></span></span><span id="s-igst">—</span></div>
+        <div class="split-row" style="font-weight:700;font-size:15px;color:#14532d;"><span>Total</span><span id="s-inter-total">—</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 4: GST Rates Reference -->
+<div id="tab-rates" class="panel">
+  <div class="card">
+    <h2 style="font-size:17px;font-weight:800;margin-bottom:16px;color:#14532d;">GST Rate Reference — India 2026</h2>
+    <div style="overflow-x:auto;">
+    <table class="rate-table">
+      <thead>
+        <tr><th>GST Rate</th><th>Category</th><th>Examples</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:800;color:#15803d;font-size:16px;">0%</td>
+          <td>Essential goods &amp; services</td>
+          <td>Fresh fruits &amp; vegetables, milk, eggs, bread, salt, grains, books, newspapers, public transport</td>
+        </tr>
+        <tr>
+          <td style="font-weight:800;color:#15803d;font-size:16px;">5%</td>
+          <td>Common use items</td>
+          <td>Packed food, sugar, tea, coffee, edible oil, coal, fertilizers, domestic LPG, economy class air travel, small restaurants</td>
+        </tr>
+        <tr>
+          <td style="font-weight:800;color:#ca8a04;font-size:16px;">12%</td>
+          <td>Processed / standard goods</td>
+          <td>Butter, cheese, ghee, frozen meat, computers, mobile phones, business class air travel, non-AC restaurants</td>
+        </tr>
+        <tr>
+          <td style="font-weight:800;color:#ea580c;font-size:16px;">18%</td>
+          <td>Most services &amp; electronics</td>
+          <td>IT services, telecom, banking fees, insurance, restaurants (AC), mineral water, paints, soaps, detergents, cameras, speakers</td>
+        </tr>
+        <tr>
+          <td style="font-weight:800;color:#dc2626;font-size:16px;">28%</td>
+          <td>Luxury &amp; sin goods</td>
+          <td>Cars, motorcycles, cement, AC units, dishwashers, tobacco, pan masala, aerated drinks, luxury hotels</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p style="font-size:11px;color:#6b7280;margin-top:8px;">* GST rates may change after Union Budget. Always verify with official CBIC notifications for compliance.</p>
+  </div>
+</div>
+
+<!-- SEO SECTION -->
+<div class="seo">
+  <h2>What is GST?</h2>
+  <p><strong>GST (Goods and Services Tax)</strong> is a unified indirect tax levied on the supply of goods and services across India, introduced on 1 July 2017. It replaced multiple state and central taxes like VAT, service tax, excise duty, and CST with a single tax structure.</p>
+
+  <h3>GST Formula</h3>
+  <p><strong>Adding GST:</strong> Total = Original Price × (1 + GST% ÷ 100)<br>
+  <strong>Removing GST:</strong> Original = Inclusive Price ÷ (1 + GST% ÷ 100)</p>
+
+  <h3>CGST vs SGST vs IGST</h3>
+  <ul>
+    <li><strong>CGST</strong> — Central GST. Collected by the central government on intrastate sales. = GST Rate ÷ 2</li>
+    <li><strong>SGST</strong> — State GST. Collected by the state government on intrastate sales. = GST Rate ÷ 2</li>
+    <li><strong>IGST</strong> — Integrated GST. Collected by the centre on interstate sales. = Full GST Rate</li>
+  </ul>
+  <p style="margin-top:8px;font-size:13px;color:#4b7c59;">Example: An 18% GST sale within Maharashtra → CGST 9% + SGST 9%. Same sale from Maharashtra to Delhi → IGST 18%.</p>
+
+  <h3>Frequently Asked Questions</h3>
+  <details>
+    <summary>How to calculate 18% GST on ₹10,000?</summary>
+    <p>GST Amount = ₹10,000 × 18 ÷ 100 = <strong>₹1,800</strong>. Total = ₹10,000 + ₹1,800 = <strong>₹11,800</strong>. CGST = ₹900, SGST = ₹900 (for intrastate).</p>
+  </details>
+  <details>
+    <summary>How to extract GST from an inclusive price?</summary>
+    <p>If you have a GST-inclusive price of ₹11,800 at 18%: Original = 11800 × 100 ÷ 118 = <strong>₹10,000</strong>. GST = ₹11,800 − ₹10,000 = <strong>₹1,800</strong>. Use the "Reverse GST" tab above.</p>
+  </details>
+  <details>
+    <summary>Which GST rate applies to services?</summary>
+    <p>Most services are taxed at 18% GST — IT, consulting, banking, insurance, telecom, professional services. Some services are at 5% (economy transport, small hotels) and 12% (non-AC restaurants, business air travel). Financial services, healthcare, and education are mostly exempt (0%).</p>
+  </details>
+  <details>
+    <summary>Do I need to register for GST?</summary>
+    <p>GST registration is mandatory if your annual turnover exceeds ₹40 lakhs (goods) or ₹20 lakhs (services). Threshold is ₹10 lakhs for special category states (North-East). Voluntary registration is also allowed.</p>
+  </details>
+  <details>
+    <summary>Does GSTCalc store my data?</summary>
+    <p>No. All calculations happen in your browser. No data is sent to any server. It is completely private.</p>
+  </details>
+
+  <div style="margin-top:20px;text-align:center;font-size:13px;color:#15803d;">
+    More free tools:
+    <a href="https://nxtcraft.github.io/invoicelab/" style="color:#16a34a;">InvoiceLab</a> ·
+    <a href="https://nxtcraft.github.io/shopbook/" style="color:#16a34a;">ShopBook</a> ·
+    <a href="https://nxtcraft.github.io/emicalc/" style="color:#16a34a;">EMICalc</a> ·
+    <a href="https://nxtcraft.github.io/taxcalc/" style="color:#16a34a;">TaxCalc</a>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<footer>
+  &copy; 2026 GSTCalc · Free GST Calculator India ·
+  <a href="https://nxtcraft.github.io/">All Tools</a> ·
+  <a href="https://nxtcraft.github.io/invoicelab/">InvoiceLab</a> ·
+  <a href="https://nxtcraft.github.io/emicalc/">EMICalc</a> ·
+  <a href="https://nxtcraft.github.io/taxcalc/">TaxCalc</a> ·
+  <a href="https://nxtcraft.github.io/shopbook/">ShopBook</a>
+</footer>
+
+<script>
+const fmt = n => '₹' + n.toLocaleString('en-IN', {minimumFractionDigits:2, maximumFractionDigits:2});
+
+function showTab(name) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// Shared: handle custom rate select
+function getRate(selId, customId, customRowId) {
+  const sel = document.getElementById(selId);
+  const row = document.getElementById(customRowId);
+  if (sel.value === 'custom') {
+    row.style.display = 'block';
+    return parseFloat(document.getElementById(customId).value) || null;
+  } else {
+    row.style.display = 'none';
+    return parseFloat(sel.value);
+  }
+}
+
+// Tab 1: Add GST
+function calcAdd() {
+  const price = parseFloat(document.getElementById('add-price').value);
+  const rate = getRate('add-rate', 'add-custom', 'add-custom-row');
+  const box = document.getElementById('add-result');
+  if (!price || price <= 0 || !rate || rate <= 0) { box.style.display='none'; return; }
+  const gst = price * rate / 100;
+  const total = price + gst;
+  document.getElementById('r-add-base').textContent = fmt(price);
+  document.getElementById('r-add-gst').textContent = fmt(gst);
+  document.getElementById('r-add-total').textContent = fmt(total);
+  document.getElementById('r-add-pct').textContent = rate + '%';
+  box.style.display = 'block';
+}
+
+// Tab 2: Reverse GST
+function calcRemove() {
+  const total = parseFloat(document.getElementById('rem-price').value);
+  const rate = getRate('rem-rate', 'rem-custom', 'rem-custom-row');
+  const box = document.getElementById('rem-result');
+  if (!total || total <= 0 || !rate || rate <= 0) { box.style.display='none'; return; }
+  const base = total * 100 / (100 + rate);
+  const gst = total - base;
+  document.getElementById('r-rem-total').textContent = fmt(total);
+  document.getElementById('r-rem-gst').textContent = fmt(gst);
+  document.getElementById('r-rem-base').textContent = fmt(base);
+  document.getElementById('r-rem-pct').textContent = rate + '%';
+  box.style.display = 'block';
+}
+
+// Tab 3: Split
+function calcSplit() {
+  const price = parseFloat(document.getElementById('sp-price').value);
+  const rate = getRate('sp-rate', 'sp-custom', 'sp-custom-row');
+  const box = document.getElementById('sp-result');
+  if (!price || price <= 0 || !rate || rate <= 0) { box.style.display='none'; return; }
+  const halfRate = rate / 2;
+  const gst = price * rate / 100;
+  const half = gst / 2;
+  const total = price + gst;
+  document.getElementById('s-base').textContent = fmt(price);
+  document.getElementById('s-cgst').textContent = fmt(half);
+  document.getElementById('s-cgst-pct').textContent = halfRate + '%';
+  document.getElementById('s-sgst').textContent = fmt(half);
+  document.getElementById('s-sgst-pct').textContent = halfRate + '%';
+  document.getElementById('s-intra-total').textContent = fmt(total);
+  document.getElementById('s-base2').textContent = fmt(price);
+  document.getElementById('s-igst').textContent = fmt(gst);
+  document.getElementById('s-igst-pct').textContent = rate + '%';
+  document.getElementById('s-inter-total').textContent = fmt(total);
+  box.style.display = 'block';
+}
+</script>
+</body>
+</html>
