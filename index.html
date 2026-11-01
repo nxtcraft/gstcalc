@@ -4,6 +4,9 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9EW10BJGW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-R9EW10BJGW");</script>
 <meta charset="UTF-8">
+<link rel="manifest" href="/gstcalc/manifest.json">
+<meta name="theme-color" content="#16a34a">
+<meta name="mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GST Calculator India — Free Online GST Calculator 2026</title>
 <meta name="description" content="Free GST calculator India. Add GST, remove GST (reverse), calculate CGST/SGST/IGST split. All GST rates: 5%, 12%, 18%, 28%. Instant, no signup needed.">
@@ -432,5 +435,6 @@ function calcSplit() {
   box.style.display = 'block';
 }
 </script>
+<script>if("serviceWorker"in navigator)navigator.serviceWorker.register("/gstcalc/sw.js");</script>
 </body>
 </html>
