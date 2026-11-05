@@ -4,51 +4,155 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9EW10BJGW"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R9EW10BJGW');</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GST Calculator Guide – Add/Remove GST India 2024 | CGST SGST IGST</title>
-<meta name="description" content="Learn how to add or remove GST from any amount. Understand CGST, SGST and IGST, reverse GST calculation, and GST slabs 0%, 5%, 12%, 18%, 28% with examples.">
+<title>GST Calculator Guide – How to Calculate GST in India (CGST, SGST & IGST Explained)</title>
+<meta name="description" content="Complete guide to GST calculation in India. CGST SGST IGST difference, all GST slab rates with examples, inclusive vs exclusive calculation, GST on common goods and services 2024.">
 <link rel="canonical" href="https://nxtcraft.github.io/gstcalc/guide/">
-<meta property="og:title" content="GST Calculator Guide – Add/Remove GST CGST SGST IGST India">
-<meta property="og:description" content="Step-by-step guide to calculating GST, understanding CGST/SGST/IGST split, and reverse GST extraction.">
+<meta property="og:title" content="GST Calculator Guide – CGST SGST IGST India 2024">
+<meta property="og:description" content="How to add or remove GST, CGST vs SGST vs IGST explained, all GST slabs, and GST rates on common goods and services in India.">
 <meta property="og:type" content="article"><meta property="og:url" content="https://nxtcraft.github.io/gstcalc/guide/">
+<meta property="og:image" content="https://nxtcraft.github.io/og-image.png">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@nxtcraft">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Calculate GST in India","step":[{"@type":"HowToStep","name":"Enter the base amount","text":"Type the original price (excluding GST) or the GST-inclusive price — select 'Add GST' or 'Remove GST' accordingly."},{"@type":"HowToStep","name":"Select GST rate","text":"Choose the applicable GST slab: 0%, 5%, 12%, 18% or 28%. For composition scheme or special rates, enter the custom rate."},{"@type":"HowToStep","name":"Choose transaction type","text":"For intra-state transactions, the GST splits into CGST + SGST (each half). For inter-state, it's IGST (full rate). Select accordingly."},{"@type":"HowToStep","name":"Read the GST breakup","text":"The calculator shows base amount, GST amount, CGST, SGST (or IGST), and total amount with GST."},{"@type":"HowToStep","name":"Reverse GST extraction","text":"To find the base price from an MRP that includes GST, use the Remove GST mode: Base = Total ÷ (1 + rate/100)."}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is GST calculated in India?","acceptedAnswer":{"@type":"Answer","text":"To add GST: GST Amount = Base Price × GST Rate / 100. Total = Base + GST. To remove GST from an inclusive price: Base Price = Inclusive Price ÷ (1 + GST Rate/100). GST Amount = Inclusive Price - Base Price."}},{"@type":"Question","name":"What is the difference between CGST, SGST and IGST?","acceptedAnswer":{"@type":"Answer","text":"For intra-state supply (seller and buyer in the same state): CGST = half the GST rate, SGST = other half. For inter-state supply (different states): only IGST applies at the full GST rate. CGST goes to central government, SGST to the state government, IGST to central government (then apportioned)."}},{"@type":"Question","name":"What are the GST slab rates in India?","acceptedAnswer":{"@type":"Answer","text":"India has 5 main GST slabs: 0% (essential goods: rice, wheat, milk, education), 5% (basic necessities: packaged food, transport), 12% (processed food, mobile phones, clothes >₹1,000), 18% (most goods/services: electronics, restaurants, software), 28% (luxury goods: cars, ACs, tobacco, aerated drinks)."}}]}</script>
-<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{background:#fff7f0;color:#7c2d12;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.7}nav{background:#ea580c;color:#fff;padding:.75rem 1.5rem;display:flex;align-items:center;gap:1rem}.brand{font-weight:800;font-size:1rem;text-decoration:none;color:#fff}.nav-links a{color:rgba(255,255,255,.8);font-size:.85rem;text-decoration:none;margin-left:1rem}main{max-width:820px;margin:0 auto;padding:2rem 1.5rem}.breadcrumb{font-size:.8rem;color:#ea580c;margin-bottom:1.5rem}.breadcrumb a{color:#ea580c;text-decoration:none}h1{font-size:1.8rem;font-weight:800;margin-bottom:.5rem;line-height:1.3;color:#7c2d12}.sub{color:#9a3412;font-size:1rem;margin-bottom:2rem}h2{font-size:1.2rem;font-weight:700;margin:2rem 0 .75rem;color:#7c2d12}p{margin-bottom:1rem;color:#9a3412}ol,ul{padding-left:1.5rem;margin-bottom:1rem}li{margin-bottom:.4rem;color:#9a3412}.cta-box{background:#ea580c;border-radius:12px;padding:1.5rem;text-align:center;margin:2rem 0}.cta-box p{color:rgba(255,255,255,.9);margin-bottom:.75rem}.btn{display:inline-block;background:#fff;color:#ea580c;padding:.65rem 1.6rem;border-radius:8px;font-weight:700;font-size:.95rem;text-decoration:none}.faq-item{border-bottom:1px solid #fed7aa;padding:1rem 0}.faq-q{font-weight:700;color:#7c2d12;margin-bottom:.4rem}.related-box{background:#ffedd5;border-radius:12px;padding:1.25rem;margin-top:2rem}.related-box h3{font-size:.85rem;font-weight:700;color:#ea580c;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.6rem}.related-links{display:flex;flex-wrap:wrap;gap:.5rem}.related-links a{padding:.3rem .8rem;border-radius:20px;background:#fff;border:1px solid #fed7aa;color:#9a3412;font-size:.82rem;font-weight:600;text-decoration:none}.related-links a:hover{background:#ea580c;color:#fff;border-color:#ea580c}footer{text-align:center;padding:2rem;color:#fdba74;font-size:.8rem;border-top:1px solid #fed7aa;margin-top:3rem}table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;font-size:.9rem}th,td{padding:.6rem .75rem;border:1px solid #fed7aa;text-align:left}th{background:#ffedd5;font-weight:700;color:#7c2d12}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Calculate GST in India","step":[{"@type":"HowToStep","name":"Enter the base amount","text":"Type the original price (excluding GST) or the GST-inclusive price — select Add GST or Remove GST accordingly."},{"@type":"HowToStep","name":"Select GST rate","text":"Choose the applicable GST slab: 0%, 5%, 12%, 18% or 28%. For composition scheme or special rates, enter the custom rate."},{"@type":"HowToStep","name":"Choose transaction type","text":"For intra-state transactions select CGST+SGST (each half). For inter-state, select IGST (full rate)."},{"@type":"HowToStep","name":"Read the GST breakup","text":"The calculator shows base amount, GST amount, CGST, SGST (or IGST), and total amount with GST."},{"@type":"HowToStep","name":"Reverse GST extraction","text":"To find the base price from an MRP that includes GST, use Remove GST mode: Base = Total ÷ (1 + rate/100)."}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is GST calculated in India?","acceptedAnswer":{"@type":"Answer","text":"To add GST to a base price: GST Amount = Base Price × GST Rate / 100; Total = Base + GST Amount. Example: ₹1,000 + 18% GST = ₹1,000 × 0.18 = ₹180 GST → Total ₹1,180. To remove GST from an inclusive price: Base Price = Inclusive Price ÷ (1 + GST Rate/100); GST = Inclusive Price − Base Price. Example: ₹1,180 ÷ 1.18 = ₹1,000 base; GST = ₹180."}},{"@type":"Question","name":"What is the difference between CGST, SGST and IGST?","acceptedAnswer":{"@type":"Answer","text":"For intra-state supply (seller and buyer in the same state): GST is split equally — CGST goes to the central government and SGST to the state government. Example: 18% GST on intra-state sale = 9% CGST + 9% SGST. For inter-state supply (seller and buyer in different states): only IGST applies at the full rate. Example: 18% on inter-state sale = 18% IGST. The buyer pays the same final price either way — only the government receiving the revenue differs."}},{"@type":"Question","name":"What are all the GST slab rates in India?","acceptedAnswer":{"@type":"Answer","text":"India has five main GST slabs: 0% (essential goods: rice, wheat, milk, education, healthcare), 5% (basic necessities: packaged food, common medicines, economy hotel rooms, economy air tickets), 12% (processed food, smartphones, clothes above ₹1,000, construction services), 18% (most goods and services: electronics, restaurants with AC, software, banking, insurance), 28% (luxury and demerit goods: cars, ACs, tobacco, aerated drinks, casinos). Special rates: gold and silver 3%, cut and polished diamonds 1.5%."}},{"@type":"Question","name":"How do I calculate GST-inclusive price?","acceptedAnswer":{"@type":"Answer","text":"To find the base price when you have a GST-inclusive (MRP with GST) price: Base Price = Inclusive Price ÷ (1 + GST Rate/100). Example: MRP ₹590 with 18% GST → Base = 590 ÷ 1.18 = ₹500. GST amount = ₹590 − ₹500 = ₹90. This is called reverse GST calculation."}},{"@type":"Question","name":"Is GST applicable on exports from India?","acceptedAnswer":{"@type":"Answer","text":"No. Exports from India are zero-rated under GST. The exporter charges 0% GST on exported goods/services and can claim a refund of all GST paid on inputs used for those exports. This is different from exempted goods (where input credit cannot be claimed)."}}]}</script>
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{background:#fff7f0;color:#7c2d12;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.7}nav{background:#ea580c;color:#fff;padding:.75rem 1.5rem;display:flex;align-items:center;gap:1rem}.brand{font-weight:800;font-size:1rem;text-decoration:none;color:#fff}.nav-links a{color:rgba(255,255,255,.8);font-size:.85rem;text-decoration:none;margin-left:1rem}main{max-width:820px;margin:0 auto;padding:2rem 1.5rem}.breadcrumb{font-size:.8rem;color:#ea580c;margin-bottom:1.5rem}.breadcrumb a{color:#ea580c;text-decoration:none}h1{font-size:1.8rem;font-weight:800;margin-bottom:.5rem;line-height:1.3;color:#7c2d12}.sub{color:#9a3412;font-size:1rem;margin-bottom:2rem}h2{font-size:1.2rem;font-weight:700;margin:2rem 0 .75rem;color:#7c2d12}p{margin-bottom:1rem;color:#9a3412}ol,ul{padding-left:1.5rem;margin-bottom:1rem}li{margin-bottom:.4rem;color:#9a3412}.cta-box{background:#ea580c;border-radius:12px;padding:1.5rem;text-align:center;margin:2rem 0}.cta-box p{color:rgba(255,255,255,.9);margin-bottom:.75rem}.btn{display:inline-block;background:#fff;color:#ea580c;padding:.65rem 1.6rem;border-radius:8px;font-weight:700;font-size:.95rem;text-decoration:none}.faq-item{border-bottom:1px solid #fed7aa;padding:1rem 0}.faq-q{font-weight:700;color:#7c2d12;margin-bottom:.4rem}.related-box{background:#ffedd5;border-radius:12px;padding:1.25rem;margin-top:2rem}.related-box h3{font-size:.85rem;font-weight:700;color:#ea580c;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.6rem}.related-links{display:flex;flex-wrap:wrap;gap:.5rem}.related-links a{padding:.3rem .8rem;border-radius:20px;background:#fff;border:1px solid #fed7aa;color:#9a3412;font-size:.82rem;font-weight:600;text-decoration:none}.related-links a:hover{background:#ea580c;color:#fff;border-color:#ea580c}footer{text-align:center;padding:2rem;color:#fdba74;font-size:.8rem;border-top:1px solid #fed7aa;margin-top:3rem}table{width:100%;border-collapse:collapse;margin-bottom:1.5rem;font-size:.9rem}th,td{padding:.6rem .75rem;border:1px solid #fed7aa;text-align:left}th{background:#ffedd5;font-weight:700;color:#7c2d12}.highlight{background:#ffedd5;border-left:3px solid #ea580c;padding:.75rem 1rem;border-radius:0 8px 8px 0;margin-bottom:1rem}</style>
 </head>
 <body>
 <nav><a class="brand" href="https://nxtcraft.github.io/gstcalc/">🧾 GST Calculator</a><div class="nav-links"><a href="https://nxtcraft.github.io/">All Tools</a><a href="https://nxtcraft.github.io/gstcalc/">Calculator</a></div></nav>
 <main>
 <div class="breadcrumb"><a href="https://nxtcraft.github.io/">Home</a> › <a href="https://nxtcraft.github.io/gstcalc/">GST Calculator</a> › Guide</div>
-<h1>GST Calculator Guide – Add/Remove GST India 2024</h1>
-<p class="sub">A complete guide to calculating GST in India — adding tax to a base price, removing it from an MRP, and understanding CGST, SGST and IGST breakdowns.</p>
-<div class="cta-box"><p>Add or remove GST from any amount — instant CGST, SGST and IGST breakup.</p><a class="btn" href="https://nxtcraft.github.io/gstcalc/">Open GST Calculator →</a></div>
-<h2>GST Formulas</h2>
-<p><strong>Add GST:</strong> GST Amount = Base × Rate / 100 → Total = Base + GST Amount</p>
-<p><strong>Remove GST (reverse):</strong> Base = Total ÷ (1 + Rate/100) → GST Amount = Total − Base</p>
-<p>Example — Add 18%: Base ₹1,000 → GST ₹180 → Total ₹1,180.</p>
-<p>Example — Remove 18%: Total ₹1,180 → Base = 1180 ÷ 1.18 = ₹1,000 → GST = ₹180.</p>
-<h2>GST Slab Rates in India</h2>
-<table><tr><th>Rate</th><th>Category Examples</th></tr><tr><td>0%</td><td>Fresh vegetables, milk, eggs, education, healthcare</td></tr><tr><td>5%</td><td>Packaged food, common medicines, transport services</td></tr><tr><td>12%</td><td>Processed food, clothes &gt;₹1,000, mobile phones, construction</td></tr><tr><td>18%</td><td>Electronics, restaurants (AC), IT services, most goods</td></tr><tr><td>28%</td><td>Cars, ACs, tobacco, aerated drinks, luxury goods</td></tr></table>
-<h2>CGST, SGST and IGST Explained</h2>
-<p>GST is a dual tax. The same rate is shared between the central and state government:</p>
+<h1>GST Calculator Guide – How to Calculate GST in India (CGST, SGST &amp; IGST Explained)</h1>
+<p class="sub">A complete guide to GST calculation in India — adding tax, removing it from MRP, understanding CGST/SGST/IGST, all slab rates, and GST on common goods and services.</p>
+
+<div class="cta-box"><p>Add or remove GST from any amount — instant CGST, SGST and IGST breakup. Free.</p><a class="btn" href="https://nxtcraft.github.io/gstcalc/">Open GST Calculator →</a></div>
+
+<h2>What is GST?</h2>
+<p>Goods and Services Tax (GST) is India's unified indirect tax system introduced on 1 July 2017. It replaced over 17 central and state taxes including central excise duty, service tax, VAT, and octroi — simplifying India's fragmented indirect tax system into a single, comprehensive structure.</p>
+<p>GST is a <strong>consumption-based, destination-based tax</strong> — it is levied where goods or services are consumed, not where they are produced. This ended the cascading effect (tax on tax) that existed under the old system.</p>
 <ul>
-<li><strong>Intra-state transaction</strong> (same state): 18% GST = 9% CGST + 9% SGST.</li>
-<li><strong>Inter-state transaction</strong> (different states): 18% GST = 18% IGST (no split).</li>
+<li><strong>Dual structure:</strong> Both the central government and state governments simultaneously levy GST on the same transaction.</li>
+<li><strong>Input Tax Credit (ITC):</strong> Businesses can claim credit for GST paid on inputs, ensuring the tax burden falls only on the final consumer.</li>
+<li><strong>Four-tier rate structure:</strong> 5%, 12%, 18%, 28% — plus 0% for essentials and special rates for gold, diamonds.</li>
+<li><strong>GST Council:</strong> A joint body of central and state finance ministers that decides rates and policy.</li>
 </ul>
-<p>Both give the same final price to the buyer. The split only matters for which government receives the revenue.</p>
+
+<h2>GST Formulas — Add and Remove GST</h2>
+<p>There are two calculation modes depending on whether the price you have includes GST or not.</p>
+<p><strong>Mode 1 — Add GST (exclusive to inclusive):</strong></p>
+<ul>
+<li>GST Amount = Base Price × GST Rate ÷ 100</li>
+<li>Total Price = Base Price + GST Amount</li>
+</ul>
+<p>Example: Base price ₹1,000, GST rate 18% → GST = ₹180 → Total = ₹1,180</p>
+
+<p><strong>Mode 2 — Remove GST / Reverse GST (inclusive to exclusive):</strong></p>
+<ul>
+<li>Base Price = Inclusive Price ÷ (1 + GST Rate ÷ 100)</li>
+<li>GST Amount = Inclusive Price − Base Price</li>
+</ul>
+<p>Example: MRP ₹1,180 with 18% GST → Base = 1180 ÷ 1.18 = ₹1,000 → GST = ₹180</p>
+
+<div class="highlight"><strong>Common mistake:</strong> Do NOT calculate 18% of ₹1,180 to get the GST in an inclusive price. That gives ₹212.4, which is wrong. Always use the reverse formula: divide by (1 + rate/100).</div>
+
+<h2>GST Slabs in India — All Rates with Examples</h2>
+<table>
+<tr><th>GST Rate</th><th>Category</th><th>Examples</th></tr>
+<tr><td><strong>0%</strong></td><td>Essential goods &amp; services</td><td>Fresh vegetables, fruits, milk, curd, eggs, rice, wheat flour, education, healthcare services, public transport</td></tr>
+<tr><td><strong>5%</strong></td><td>Basic necessities</td><td>Packaged food (branded), coffee/tea, life-saving medicines, economy class air tickets, hotel rooms under ₹1,000/night, frozen vegetables</td></tr>
+<tr><td><strong>12%</strong></td><td>Standard goods</td><td>Processed food, smartphones (Indian manufacturing), clothes above ₹1,000, construction services, business class air tickets, fertilisers</td></tr>
+<tr><td><strong>18%</strong></td><td>Most goods &amp; services</td><td>Electronics, AC restaurants, banking &amp; insurance, software, IT services, all types of vehicles except those in 28% slab, cosmetics, paints</td></tr>
+<tr><td><strong>28%</strong></td><td>Luxury &amp; demerit goods</td><td>Large cars (>13 seats or 4-metre sedans), ACs, refrigerators, washing machines, tobacco, aerated drinks, casinos, online gaming</td></tr>
+<tr><td><strong>Special</strong></td><td>Precious metals</td><td>Gold and silver: 3%; Cut and polished diamonds: 1.5%; Rough diamonds: 0.25%</td></tr>
+</table>
+<p><strong>GST Compensation Cess</strong> is levied over and above 28% on demerit goods: tobacco (varies), luxury cars (+15–22%), aerated drinks (+12%). This cess was originally meant to compensate states for revenue loss post-GST implementation.</p>
+
+<h2>CGST vs SGST vs IGST — The Complete Explanation</h2>
+<p>This is the most confusing part of GST for most people. The same GST rate applies differently depending on whether the transaction is within a state or between states.</p>
+
+<p><strong>Intra-state transaction (supplier and customer in the same state):</strong></p>
+<ul>
+<li>GST is split 50-50 between the Centre and the State.</li>
+<li>CGST (Central GST) = half the GST rate → collected by central government</li>
+<li>SGST (State GST) = half the GST rate → collected by state government</li>
+</ul>
+<p>Example: A Maharashtra business sells a service at ₹1,000 (18% GST) to a customer in Maharashtra:<br>
+→ CGST = 9% of ₹1,000 = ₹90 (goes to Centre)<br>
+→ SGST = 9% of ₹1,000 = ₹90 (goes to Maharashtra government)<br>
+→ Total GST paid by customer = ₹180. Total invoice = ₹1,180.</p>
+
+<p><strong>Inter-state transaction (supplier and customer in different states):</strong></p>
+<ul>
+<li>Only IGST (Integrated GST) applies at the full rate.</li>
+<li>IGST is collected by the central government and later apportioned to the destination state.</li>
+</ul>
+<p>Example: Same Maharashtra business sells the same ₹1,000 service to a customer in Gujarat:<br>
+→ IGST = 18% of ₹1,000 = ₹180 (collected by Centre, later shared with Gujarat)<br>
+→ Total invoice = ₹1,180.</p>
+
+<div class="highlight">The final price paid by the customer is identical (₹1,180) in both cases. The CGST/SGST vs IGST split only determines which government receives the tax — it has no effect on the buyer's cost.</div>
+
+<p><strong>UTGST (Union Territory GST)</strong> applies instead of SGST for intra-UT transactions in Chandigarh, Puducherry, Lakshadweep, Daman &amp; Diu, Dadra &amp; Nagar Haveli, Andaman &amp; Nicobar Islands.</p>
+
+<h2>GST Inclusive vs Exclusive — Key Differences</h2>
+<table>
+<tr><th>Aspect</th><th>GST Exclusive Price</th><th>GST Inclusive Price</th></tr>
+<tr><td>What it shows</td><td>Price before GST is added</td><td>Price after GST is included (MRP)</td></tr>
+<tr><td>Common in</td><td>B2B invoices, quoted prices</td><td>Retail MRP, e-commerce listings</td></tr>
+<tr><td>Calculation direction</td><td>Add GST to get final price</td><td>Remove GST to get base price</td></tr>
+<tr><td>Formula</td><td>Total = Base × (1 + Rate/100)</td><td>Base = Total ÷ (1 + Rate/100)</td></tr>
+<tr><td>Example at 18%</td><td>₹1,000 → ₹1,180</td><td>₹1,180 → ₹1,000 base</td></tr>
+</table>
+
+<h2>GST Rates on Common Goods &amp; Services</h2>
+<table>
+<tr><th>Item / Service</th><th>GST Rate</th><th>Notes</th></tr>
+<tr><td>Restaurant (non-AC)</td><td>5%</td><td>No ITC benefit to restaurant</td></tr>
+<tr><td>Restaurant (AC / 5-star)</td><td>18%</td><td>ITC available to restaurant</td></tr>
+<tr><td>Hotel room &lt; ₹1,000/night</td><td>12%</td><td>Based on transaction value</td></tr>
+<tr><td>Hotel room ≥ ₹7,500/night</td><td>18%</td><td></td></tr>
+<tr><td>Economy air ticket</td><td>5%</td><td>Domestic flights</td></tr>
+<tr><td>Business class air ticket</td><td>12%</td><td>Domestic flights</td></tr>
+<tr><td>Mobile phones</td><td>18%</td><td>Manufactured in India mostly</td></tr>
+<tr><td>Cars (small, petrol, &lt; 1200cc)</td><td>28% + 1% cess</td><td></td></tr>
+<tr><td>Cars (SUV, diesel, &gt; 1500cc)</td><td>28% + 22% cess</td><td>Effective rate ~50%</td></tr>
+<tr><td>Gold jewellery</td><td>3%</td><td>Plus making charges at 5%</td></tr>
+<tr><td>Health insurance premium</td><td>18%</td><td>Deductible under Section 80D</td></tr>
+<tr><td>Term life insurance</td><td>18%</td><td>On premium paid</td></tr>
+<tr><td>Electricity</td><td>Exempt (0%)</td><td>Outside GST</td></tr>
+<tr><td>Petrol / Diesel</td><td>Exempt (0%)</td><td>Outside GST — still under state taxes</td></tr>
+<tr><td>Alcohol for human consumption</td><td>Exempt (0%)</td><td>Subject to state excise</td></tr>
+<tr><td>Tobacco / cigarettes</td><td>28% + cess</td><td>Cess varies by product</td></tr>
+</table>
+
+<h2>Who Needs to Register for GST?</h2>
+<p>GST registration is mandatory for:</p>
+<ul>
+<li><strong>Businesses selling goods</strong> with turnover exceeding ₹40 lakh per year (₹20 lakh in special category states like Northeast, Himachal Pradesh, Uttarakhand).</li>
+<li><strong>Service providers</strong> with turnover exceeding ₹20 lakh per year (₹10 lakh in special category states).</li>
+<li><strong>Interstate suppliers</strong> regardless of turnover — even one inter-state sale mandates registration.</li>
+<li><strong>E-commerce sellers</strong> who sell through platforms like Amazon, Flipkart, or Meesho — mandatory regardless of turnover.</li>
+<li><strong>Reverse charge mechanism (RCM) recipients</strong> — businesses that receive certain services from unregistered vendors.</li>
+</ul>
+<p>Voluntary registration is possible even below threshold — useful for businesses wanting to claim input tax credit.</p>
+
 <h2>How to Use the GST Calculator</h2>
 <ol>
-<li>Select <strong>Add GST</strong> (base price → total) or <strong>Remove GST</strong> (total → base price).</li>
-<li>Enter the amount.</li>
-<li>Choose the GST rate (5%, 12%, 18%, 28%) or type a custom rate.</li>
-<li>Select <strong>Intra-state</strong> or <strong>Inter-state</strong> for CGST/SGST or IGST breakup.</li>
-<li>The result shows base amount, GST amount, CGST, SGST/IGST, and total.</li>
+<li>Select <strong>Add GST</strong> (base price to total) or <strong>Remove GST</strong> (MRP to base price).</li>
+<li>Enter the amount in the input field.</li>
+<li>Choose the GST rate — 5%, 12%, 18%, 28%, or type a custom rate (e.g. 3% for gold).</li>
+<li>Select <strong>Intra-state</strong> (CGST + SGST split) or <strong>Inter-state</strong> (IGST).</li>
+<li>The result shows base amount, GST amount, CGST, SGST/IGST breakdown, and final total.</li>
 </ol>
+
 <h2>Frequently Asked Questions</h2>
-<div class="faq-item"><div class="faq-q">How is GST calculated in India?</div><p>Add GST: GST Amount = Base × Rate / 100; Total = Base + GST. Remove GST: Base = Total ÷ (1 + Rate/100); GST = Total − Base.</p></div>
-<div class="faq-item"><div class="faq-q">What is CGST, SGST and IGST?</div><p>Intra-state: CGST = SGST = GST rate / 2. Inter-state: IGST = full GST rate. Buyer pays the same price either way; only the government receiving the tax differs.</p></div>
-<div class="faq-item"><div class="faq-q">What are the GST slabs in India?</div><p>0% (essentials), 5% (basic goods), 12% (processed goods), 18% (most goods/services), 28% (luxury/demerit goods). Some items like gold have special 3% rate.</p></div>
-<div class="related-box"><h3>Related Tools</h3><div class="related-links"><a href="https://nxtcraft.github.io/taxcalc/">💰 Income Tax</a><a href="https://nxtcraft.github.io/invoicekit/">🧾 Invoice Generator</a><a href="https://nxtcraft.github.io/emicalc/">🏦 EMI Calculator</a><a href="https://nxtcraft.github.io/tradecalc/">📊 Trade Calculator</a></div></div>
+<div class="faq-item"><div class="faq-q">How is GST calculated in India?</div><p>Add GST: Total = Base × (1 + Rate/100). Remove GST: Base = Total ÷ (1 + Rate/100). For 18% on ₹1,000: Total = ₹1,180. Reverse: ₹1,180 ÷ 1.18 = ₹1,000. Never compute GST% on the inclusive price directly — that overstates the GST amount.</p></div>
+<div class="faq-item"><div class="faq-q">What is the GST rate on services in India?</div><p>Most services are taxed at 18% GST. Exceptions: restaurants 5% (non-AC) or 18% (AC), economy air travel 5%, construction 12%, healthcare and education 0%. Banking and insurance: 18%. Professional services (CA, lawyer, consultant): 18%.</p></div>
+<div class="faq-item"><div class="faq-q">What is IGST and when does it apply?</div><p>IGST (Integrated GST) applies when the supplier and customer are in different states (inter-state supply). IGST = full GST rate collected by the central government, which then apportions the state's share to the destination state. For same-state transactions, CGST + SGST (each half) apply instead.</p></div>
+<div class="faq-item"><div class="faq-q">How do I calculate GST-inclusive price?</div><p>To find the original base price from an MRP that includes GST: Base = MRP ÷ (1 + GST%/100). Example: MRP ₹590 with 18% GST → Base = 590 ÷ 1.18 = ₹500. GST amount = ₹90. The GST calculator handles this in "Remove GST" mode automatically.</p></div>
+<div class="faq-item"><div class="faq-q">Is GST applicable on exports?</div><p>No. Exports are zero-rated under GST — the GST rate on exported goods and services is 0%. Exporters can claim a refund of all input GST paid on materials/services used in producing the exported goods. This is different from an exemption, where input credit cannot be claimed.</p></div>
+
+<div class="cta-box"><p>Calculate GST for any amount — CGST, SGST and IGST breakdown. Instant and free.</p><a class="btn" href="https://nxtcraft.github.io/gstcalc/">Open GST Calculator →</a></div>
+
+<div class="related-box"><h3>Related Tools</h3><div class="related-links"><a href="https://nxtcraft.github.io/invoicelab/">🧾 Invoice Generator</a><a href="https://nxtcraft.github.io/taxcalc/">💰 Income Tax</a><a href="https://nxtcraft.github.io/emicalc/">🏦 EMI Calculator</a><a href="https://nxtcraft.github.io/tradecalc/">📊 Trade Calculator</a></div></div>
 </main>
 <footer><p>© 2026 <a href="https://nxtcraft.github.io/" style="color:#fdba74">NxtCraft</a> — Free Online Tools. No signup required.</p></footer>
 </body></html>
